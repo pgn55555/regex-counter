@@ -1,0 +1,13 @@
+# python
+__pycache__
+.env
+
+# my testing
+mytest.py
+
+# tests
+.pytest_cache
+.coverage
+
+# comment more than the file name
+notes
