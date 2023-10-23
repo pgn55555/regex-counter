@@ -50,6 +50,10 @@ def test_4_accept_check():
     r = Regex('aa*.* a 200')
     assert r.is_include()
 
+def test_5_accept_chech():
+    r = Regex('a11.. a 1')
+    assert r.is_include()
+
 
 def test_1_reject_chech():
     r = Regex('a* b 1')
@@ -61,4 +65,8 @@ def test_2_reject_chech():
 
 def test_3_reject_chech():
     r = Regex('ba*. b 2')
+    assert not r.is_include()
+
+def test_4_reject_chech():
+    r = Regex('a11.. a 2')
     assert not r.is_include()
