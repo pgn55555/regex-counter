@@ -13,3 +13,7 @@ TestCode:
 
     script:
         - pytest
+
+    tags:
+        - common
+        - cpu
